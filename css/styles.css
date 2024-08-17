@@ -520,6 +520,7 @@ input,
   border-radius: 4px;
   background: transparent;
   margin-right: 24px;
+  color: #fff;
 }
 
 .form-input::placeholder {
@@ -608,8 +609,17 @@ input,
   width: 24px;
   height: 24px;
   border-radius: 50%;
+  border: 1px rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
-  color: #2e2f42;
+  fill: #2e2f42;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-bth:hover,
+.modal-close-bth:focus {
+  background-color: #404bbf;
+  fill: #fff;
 }
 
 .bakdrop-p {
@@ -631,6 +641,10 @@ input,
   color: #8e8f99;
 }
 
+.form-wraper-cont {
+  margin-bottom: 8px;
+}
+
 .modal-input {
   border-radius: 4px;
   width: 100%;
@@ -641,7 +655,9 @@ input,
   line-height: 1;
   color: rgba(46, 47, 66, 0.4);
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-input::placeholder {
   line-height: 1.67;
   letter-spacing: 0.04em;
@@ -653,6 +669,12 @@ input,
 .modal-msg:focus {
   border-color: #4d5ae5;
 }
+
+.modal-input:focus + .modal-icon {
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
+}
+
 .modal-msg {
   font-size: 12px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -670,11 +692,18 @@ input,
   color: rgba(46, 47, 66, 0.4);
   outline: transparent;
 }
+
 .modal-msg::placeholder {
   line-height: 1.67;
   letter-spacing: 0.04em;
   text-align: justify;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bakdrop-button {
