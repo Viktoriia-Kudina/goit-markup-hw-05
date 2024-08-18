@@ -633,26 +633,30 @@ input,
 }
 
 .modal-label {
-  display: block;
-  margin-bottom: 8px;
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.form-wraper-cont {
+.modal-cont-inpunt {
+  position: relative;
+  display: flex;
   margin-bottom: 8px;
 }
 
-/* .modal-cont-inpunt {
-  position: relative;
-} */
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-input {
-  border-radius: 4px;
   width: 100%;
   height: 40px;
+  border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background: transparent;
   padding-left: 16px;
@@ -678,37 +682,6 @@ input,
   fill: #4d5ae5;
 }
 
-.modal-msg {
-  font-size: 12px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 100%;
-  height: 120px;
-  background-color: transparent;
-  padding-top: 8px;
-  padding-left: 16px;
-  resize: none;
-
-  line-height: 1.67;
-  letter-spacing: 0.04em;
-  text-align: justify;
-  color: rgba(46, 47, 66, 0.4);
-  outline: transparent;
-}
-
-.modal-msg::placeholder {
-  line-height: 1.67;
-  letter-spacing: 0.04em;
-  text-align: justify;
-  color: rgba(46, 47, 66, 0.4);
-}
-
-.modal-icon {
-  position: absolute;
-  left: 16px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .bakdrop-button {
   font-family: inherit;
   font-weight: 500;
@@ -729,4 +702,66 @@ input,
   margin-right: auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-wraper-cont-commet {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.modal-msg {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 120px;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-left: 16px;
+  resize: none;
+
+  outline: transparent;
+  margin-bottom: 8px;
+}
+
+.modal-msg::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+/* checkbox */
+
+.custom-checkbox {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.checkbox-input:checked + .checkbox-label > .custom-checkbox {
+  border-color: transparent;
+  background-color: #404bbf;
+}
+
+.checkbox-label {
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.checkbox-span-policy {
+  line-height: 1.33;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
 }
