@@ -475,6 +475,7 @@ img {
 }
 
 /* form footer */
+
 .form {
   display: flex;
   gap: 24px;
@@ -522,7 +523,6 @@ img {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
