@@ -434,8 +434,8 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="page-footer">
-      <div class="container container-footer">
+<footer class="page-footer">
+   <div class="container container-footer">
         <div class="footer-c">
           <a class="logo footer-logo f-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
@@ -477,81 +477,66 @@
               </a>
             </li>
           </ul>
-        </div>
-
-        <form class="form" name="subscribe">
-          <label class="form-label">
-            <p class="label-text">Subscribe</p>
-           <div class="flex-form"> 
-            <input
-              class="form-input"
-              type="text"
-              name="username"
-              placeholder="E-mail"
-            />
-          </label>
-
-          <button class="form-button" type="submit">
-            Subscribe
+        </div> 
+        <div class="form-footer">
+  <form class="form" name="subscribe">
+          <label class="label-text form-label"> Subscribe 
+            <div class="flex-form"> 
+            <input class="form-input" type="text" name="username" placeholder="E-mail"
+            /></label>
+          <button class="form-button" type="submit">Subscribe
             <svg class="footer-icon-button" width="24" height="24">
               <use href="../images/icons.svg#icon-telegram"></use>
             </svg>
           </button>
-          </div>
-        </form>
-      </div>
-    </footer>
+        </div>
+  </form>   
+  </div>
+</footer>
 <!-- bacgrop -->
 <div class="bakdrop is-open">
   <div class="modal">
       <button class="modal-close-bth" type="button"><svg class="bakdrop-icon-button" width="24" height="24"><use href="../images/icons.svg#icon-vector"></use></svg>
       </button>
       <p class="bakdrop-p">Leave your contacts and we will call you back</p>
-   <div class="form-backdrop" name="subscribe">
-    <div class="form-wraper-cont" >
+  <div class="form-backdrop" name="subscribe">
+  <div class="form-wraper-cont" >
       <label class="modal-label" for="user-name">
-    Name</label></div>
-    <div class="modal-cont-inpunt">
+    Name</label>
+  </div>
+  <div class="modal-cont-inpunt">
     <input class="modal-input" type="text" id="user-name" autofocus/>
-    <svg class="modal-icon" width="18" height="18">
-              <use href="../images/icons.svg#icon-name"></use>
-            </svg>
-      </div>
-    <div class="form-wraper-cont">
-     <label class="modal-label">
-    Phone</label></div>
-    <div class="modal-cont-inpunt">
+    <svg class="modal-icon" width="18" height="18"><use href="../images/icons.svg#icon-name"></use></svg>
+  </div>
+  <div class="form-wraper-cont"><label class="modal-label">Phone</label>
+  </div>
+  <div class="modal-cont-inpunt">
     <input class="modal-input" type="tel" id="user-tel"/>
-    <svg class="modal-icon" width="18" height="18">
-              <use href="../images/icons.svg#icon-phone"></use>
-            </svg> 
-            </div>
-    <div class="form-wraper-cont">
-    <label class="modal-label">
-    Email</label></div>
-    <div class="modal-cont-inpunt">
-    <input class="modal-input" type="email" id="user-email"/>
-    <svg class="modal-icon" width="18" height="18">
-              <use href="../images/icons.svg#icon-email"></use>
-            </svg>
-            </div>
-    <div class="form-wraper-cont-commet">      
-    <label class="modal-label-cont-commet">
-    Comment</label></div>
+    <svg class="modal-icon" width="18" height="18"><use href="../images/icons.svg#icon-phone"></use></svg> 
+  </div>
+  <div class="form-wraper-cont">
+    <label class="modal-label">Email</label>
+  </div>
+  <div class="modal-cont-inpunt">
+    <input class="modal-input" type="email" id="user-email"/><svg class="modal-icon" width="18" height="18"><use href="../images/icons.svg#icon-email"></use></svg>
+  </div>
+  <div class="form-wraper-cont-commet">      
+    <label class="modal-label-cont-commet">Comment</label>
+  </div>
+  <div class="textarea"></div>
     <textarea class="modal-msg" name="comment" rows="5" placeholder="Text input"></textarea>
-    </div>
-
+  </div>
    <!-- checkbox -->
-   <div class="checkbox">
-    <input class="checkbox-input visually-hidden" type="checkbox" id="user-checkbox">
-    <label for="user-checkbox" class="checkbox-label">
-    <span class="custom-checkbox"><svg class="" width="10" height="8"><use href="../images/icons.svg#icon-vectorr"></use></svg></span>I accept the terms and conditions of the
-  <a class="checkbox-span-policy" href="#">Privacy Policy</a></label>
+  <div class="checkbox">
+    <input type="checkbox" id="user-checkbox" class="checkbox-input visually-hidden"/>
+    <label for="user-checkbox" class="checkbox-label"><span class="custom-checkbox"><svg class="" width="10" height="8"><use href="../images/icons.svg#icon-vectorr"></use></svg></span>I accept the terms and conditions of the
+    <a class="checkbox-span-policy" href="#">Privacy Policy</a></label>
   </div>  
-  <div class="bacgrop-button-send"></div>
+  <div class="bacgrop-button-send">
     <button class="bakdrop-button" type="submit">Send</button>
   </div>
   </form>
+</div>
 </div>
   </body>
 </html>
