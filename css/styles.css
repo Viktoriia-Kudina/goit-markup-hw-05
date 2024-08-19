@@ -671,14 +671,14 @@ img {
   color: #8e8f99;
 }
 
-.modal-form-label-commet {
+/* .modal-form-label-commet {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
-}
+} */
 
 .modal-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
