@@ -605,6 +605,7 @@ img {
 .modal-close-bth:focus {
   background-color: #404bbf;
   fill: #fff;
+  border: none;
 }
 
 .modal-text {
