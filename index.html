@@ -64,7 +64,9 @@
       <section class="section-first">
         <div class="container">
           <h1 class="first-title">Effective Solutions for Your Business</h1>
-          <button class="first-btn" type="button">Order Service</button>
+          <button class="first-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- section-feature -->
@@ -499,9 +501,9 @@
       </div>
     </footer>
     <!-- bacgrop -->
-    <div class="bacgrop is-open">
+    <div class="bacgrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-bth">
+        <button type="button" class="modal-close-bth" data-modal-close>
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
@@ -530,7 +532,7 @@
                 class="modal-input"
                 type="tel"
                 id="user-tel"
-                name="user-tel"
+                name="user-name"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
@@ -545,7 +547,7 @@
                 class="modal-input"
                 type="email"
                 id="user-email"
-                name="user-email"
+                name="user-name"
                 required
               />
               <svg class="modal-icon" width="18" height="24">
@@ -586,5 +588,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
